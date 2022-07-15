@@ -4,16 +4,19 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 //use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Auth\Authenticatable as AuthenticatableTrait;
+
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class User extends Eloquent implements Authenticatable
+class User extends Eloquent implements AuthenticatableContract, CanResetPasswordContract
 {
-    use AuthenticatableTrait;
+    use Authenticatable, CanResetPassword;
 
     /**
      * The attributes that are mass assignable.
@@ -21,7 +24,10 @@ class User extends Eloquent implements Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'matricula',
         'name',
+        'apellido',
+        'carrera',
         'email',
         'password',
     ];
