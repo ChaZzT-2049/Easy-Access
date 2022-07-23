@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+use Auth;
+
 class RegisterController extends Controller
 {
     /*
@@ -56,6 +58,7 @@ class RegisterController extends Controller
             'carrera' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'admin' => ['required', 'boolean'],
         ]);
     }
 
@@ -74,6 +77,14 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'carrera' => $data['carrera'],
             'password' => Hash::make($data['password']),
+            'admin' => $data['admin'],
         ]);
+    }
+    
+    public function redirectPath(){
+        if(Auth::User()->admin){ 
+            return '/adminhp';
+        }
+        return '/home';
     }
 }

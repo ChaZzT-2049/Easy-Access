@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #E0FFFF;">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light" style="background-color: #4682B4;">
             <div class="container">
@@ -74,8 +74,7 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4" style="background-color: #E0FFFF;">
+        <main class="py-4">
             @yield('content')
         </main>
     </div>

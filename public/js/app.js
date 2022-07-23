@@ -5378,6 +5378,24 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/Principal */ "./resources/js/components/Principal.js");
 
+__webpack_require__(/*! ./components/Pie */ "./resources/js/components/Pie.js");
+
+__webpack_require__(/*! ./components/Usuarios */ "./resources/js/components/Usuarios.js");
+
+__webpack_require__(/*! ./components/Estudiante */ "./resources/js/components/Estudiante.js");
+
+__webpack_require__(/*! ./components/Profesor */ "./resources/js/components/Profesor.js");
+
+__webpack_require__(/*! ./components/Servicios */ "./resources/js/components/Servicios.js");
+
+__webpack_require__(/*! ./components/Proveedor */ "./resources/js/components/Proveedor.js");
+
+__webpack_require__(/*! ./components/Directivo */ "./resources/js/components/Directivo.js");
+
+__webpack_require__(/*! ./components/General */ "./resources/js/components/General.js");
+
+__webpack_require__(/*! ./components/Administrador */ "./resources/js/components/Administrador.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -5416,6 +5434,171 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/components/Administrador.js":
+/*!**************************************************!*\
+  !*** ./resources/js/components/Administrador.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Administrador = function Administrador() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: "Administrador"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Administrador);
+
+/***/ }),
+
+/***/ "./resources/js/components/Directivo.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Directivo.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Directivo = function Directivo() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: "Directivo"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Directivo);
+
+/***/ }),
+
+/***/ "./resources/js/components/Estudiante.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/Estudiante.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var Estudiante = function Estudiante() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "row mb-3",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+        htmlFor: "matricula",
+        className: "col-md-4 col-form-label text-md-end",
+        children: "Matricula"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "col-md-6",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+          id: "matricula",
+          type: "text",
+          className: "form-control",
+          name: "matricula",
+          required: true,
+          autoComplete: "matricula",
+          autoFocus: true
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Estudiante);
+
+/***/ }),
+
+/***/ "./resources/js/components/General.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/General.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var General = function General() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: "General"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (General);
+
+/***/ }),
+
+/***/ "./resources/js/components/Pie.js":
+/*!****************************************!*\
+  !*** ./resources/js/components/Pie.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Pie)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function Pie() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+      children: "\xA9 2022 EasyAccess"
+    })
+  });
+}
+
+if (document.getElementById('pie')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Pie, {}), document.getElementById('pie'));
+}
+
+/***/ }),
+
 /***/ "./resources/js/components/Principal.js":
 /*!**********************************************!*\
   !*** ./resources/js/components/Principal.js ***!
@@ -5438,7 +5621,7 @@ function Principal() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
       className: "text-center",
-      children: "Bienvenido a Easy Access"
+      children: "Bienvenido a EasyAccess"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h4", {
       className: "text-center",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("strong", {
@@ -5450,6 +5633,262 @@ function Principal() {
 
 if (document.getElementById('bienvenida')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Principal, {}), document.getElementById('bienvenida'));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Profesor.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Profesor.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Profesor = function Profesor() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: "Profesor"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Profesor);
+
+/***/ }),
+
+/***/ "./resources/js/components/Proveedor.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Proveedor.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Proveedor = function Proveedor() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: "Proveedor"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Proveedor);
+
+/***/ }),
+
+/***/ "./resources/js/components/Servicios.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Servicios.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Servicios = function Servicios() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: "Servicios"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Servicios);
+
+/***/ }),
+
+/***/ "./resources/js/components/Usuarios.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Usuarios.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Usuarios)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _Estudiante__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Estudiante */ "./resources/js/components/Estudiante.js");
+/* harmony import */ var _Profesor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Profesor */ "./resources/js/components/Profesor.js");
+/* harmony import */ var _Servicios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Servicios */ "./resources/js/components/Servicios.js");
+/* harmony import */ var _Proveedor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Proveedor */ "./resources/js/components/Proveedor.js");
+/* harmony import */ var _Directivo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Directivo */ "./resources/js/components/Directivo.js");
+/* harmony import */ var _General__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./General */ "./resources/js/components/General.js");
+/* harmony import */ var _Administrador__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Administrador */ "./resources/js/components/Administrador.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Usuarios() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("EligeUsuario"),
+      _useState2 = _slicedToArray(_useState, 2),
+      usuario = _useState2[0],
+      setUsuario = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      estudianteContentVisible = _useState4[0],
+      setEstudianteContentVisible = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState6 = _slicedToArray(_useState5, 2),
+      profesorContentVisible = _useState6[0],
+      setProfesorContentVisible = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState8 = _slicedToArray(_useState7, 2),
+      serviciosContentVisible = _useState8[0],
+      setServiciosContentVisible = _useState8[1];
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState10 = _slicedToArray(_useState9, 2),
+      proveedorContentVisible = _useState10[0],
+      setProveedorContentVisible = _useState10[1];
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState12 = _slicedToArray(_useState11, 2),
+      directivoContentVisible = _useState12[0],
+      setDirectivoContentVisible = _useState12[1];
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState14 = _slicedToArray(_useState13, 2),
+      generalContentVisible = _useState14[0],
+      setGeneralContentVisible = _useState14[1];
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState16 = _slicedToArray(_useState15, 2),
+      administradorContentVisible = _useState16[0],
+      setAdministradorContentVisible = _useState16[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    usuario === "Estudiante" ? setEstudianteContentVisible(true) : setEstudianteContentVisible(false);
+    usuario === "Profesor" ? setProfesorContentVisible(true) : setProfesorContentVisible(false);
+    usuario === "Servicios" ? setServiciosContentVisible(true) : setServiciosContentVisible(false);
+    usuario === "Proveedor" ? setProveedorContentVisible(true) : setProveedorContentVisible(false);
+    usuario === "Directivo" ? setDirectivoContentVisible(true) : setDirectivoContentVisible(false);
+    usuario === "General" ? setGeneralContentVisible(true) : setGeneralContentVisible(false);
+    usuario === "Administrador" ? setAdministradorContentVisible(true) : setAdministradorContentVisible(false);
+  }, [usuario]);
+
+  var handleOnChange = function handleOnChange(e) {
+    setUsuario(e.target.value);
+  };
+
+  var makeFirstLetterCapital = function makeFirstLetterCapital(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
+  var renderResult = function renderResult() {
+    var result;
+    usuario === "EligeUsuario" ? result = "Selecciona el tipo de usuario" : result = makeFirstLetterCapital(usuario);
+    return result;
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+    className: "container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      className: "row mb-3",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("label", {
+        htmlFor: "tipos",
+        className: "col-md-4 col-form-label text-md-end",
+        children: "Tipo de Usuario"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("p", {
+        className: "col-md-6 col-form-label text-center",
+        children: ["Bienvenido, ", renderResult()]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+        className: "col-md-4 text-md-end",
+        children: "*campo obligatorio"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        className: "col-md-6 text-center",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("select", {
+          id: "tipos",
+          type: "text",
+          className: "form-select",
+          value: usuario,
+          onChange: handleOnChange,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "EligeUsuario",
+            children: "selecciona el tipo de usuario"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "Estudiante",
+            children: "Estudiante"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "Profesor",
+            children: "Profesor"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "Servicios",
+            children: "Servicios"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "Proveedor",
+            children: "Proveedor"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "Directivo",
+            children: "Directivo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "General",
+            children: "General"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+            value: "Administrador",
+            children: "Administrador"
+          })]
+        }), estudianteContentVisible && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Estudiante__WEBPACK_IMPORTED_MODULE_2__["default"], {}), profesorContentVisible && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Profesor__WEBPACK_IMPORTED_MODULE_3__["default"], {}), serviciosContentVisible && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Servicios__WEBPACK_IMPORTED_MODULE_4__["default"], {}), proveedorContentVisible && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Proveedor__WEBPACK_IMPORTED_MODULE_5__["default"], {}), directivoContentVisible && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Directivo__WEBPACK_IMPORTED_MODULE_6__["default"], {}), generalContentVisible && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_General__WEBPACK_IMPORTED_MODULE_7__["default"], {}), administradorContentVisible && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Administrador__WEBPACK_IMPORTED_MODULE_8__["default"], {})]
+      })]
+    })
+  });
+}
+
+if (document.getElementById('tipo')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Usuarios, {}), document.getElementById('tipo'));
 }
 
 /***/ }),

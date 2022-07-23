@@ -5,26 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header text-center">{{ __('Registro') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="row mb-3">
-                            <label for="matricula" class="col-md-4 col-form-label text-md-end">{{ __('Matrícula') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="matricula" type="text" class="form-control @error('matricula') is-invalid @enderror" name="matricula" value="{{ old('matricula') }}" required autocomplete="matricula" autofocus>
-
-                                @error('matricula')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                        
                         <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nombre') }}</label>
 
@@ -54,26 +40,6 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="carrera" class="col-md-4 col-form-label text-md-end">{{ __('Carrera') }}</label>
-
-                            <div class="col-md-6">
-                                <select id="carrera" type="text" class="form-control @error('carrera') is-invalid @enderror" name="carrera" value="{{ old('carrera') }}" required autocomplete="carrera" autofocus>
-                                    <option>Desarrollo y Gestión de Software</option>
-                                    <option>Gastronomía</option>
-                                    <option>Gestión y Desarrollo Turístico</option>
-                                    <option>Contaduría</option>
-                                    <option>Mantenimiento Industrial</option>
-                                    <option>Terapia física</option>
-                                </select>
-                                @error('carrera')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Correo electrónico') }}</label>
 
                             <div class="col-md-6">
@@ -85,6 +51,10 @@
                                     </span>
                                 @enderror
                             </div>
+                        </div>
+
+                        <div id="tipo" class="row mb-3">
+
                         </div>
 
                         <div class="row mb-3">
@@ -122,4 +92,5 @@
         </div>
     </div>
 </div>
+<div id="pie" style="position : fixed; bottom : 0; height : 40px;  padding-top: 10px;"></div>
 @endsection

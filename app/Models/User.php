@@ -30,6 +30,7 @@ class User extends Eloquent implements AuthenticatableContract, CanResetPassword
         'carrera',
         'email',
         'password',
+        'admin',
     ];
 
     /**
@@ -50,4 +51,9 @@ class User extends Eloquent implements AuthenticatableContract, CanResetPassword
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setAdminAttribute($value)
+    {
+        $this->attributes['admin'] = ($value==1);
+    }
 }

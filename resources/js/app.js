@@ -13,3 +13,14 @@ require('./bootstrap');
  */
 
 require('./components/Principal');
+require('./components/Pie');
+require('./components/Usuarios');
+
+require('./components/Estudiante');
+require('./components/Profesor');
+require('./components/Servicios');
+require('./components/Proveedor');
+require('./components/Directivo');
+require('./components/General');
+
+require('./components/Administrador');
