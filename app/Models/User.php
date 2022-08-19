@@ -3,34 +3,48 @@
 namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Model;
 //use Illuminate\Foundation\Auth\User as Authenticatable;
-
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Auth\Passwords\CanResetPassword;
-use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class User extends Eloquent implements AuthenticatableContract, CanResetPasswordContract
+class User extends Eloquent implements AuthenticatableContract
 {
-    use Authenticatable, CanResetPassword;
+    use Authenticatable;
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+    //atributos
     protected $fillable = [
-        'matricula',
         'name',
-        'apellido',
-        'carrera',
         'email',
-        'password',
+        'tipo',
+        'matricula',
+        'carrera',
+        'numemp',
+        'areaper',
+        'cargo',
+        'identificacion',
+        'celular',
+        'motivo',
+        'empresaser',
+        'encargadoser',
+        'areaser',
+        'servicio',
+        'empresapro',
+        'encargadopro',
+        'descripcion',
+        'numadmin',
         'admin',
+        'tipoaux',
+        'password',
     ];
 
     /**
@@ -38,6 +52,7 @@ class User extends Eloquent implements AuthenticatableContract, CanResetPassword
      *
      * @var array<int, string>
      */
+    // atributos encriptados
     protected $hidden = [
         'password',
         'remember_token',
@@ -51,7 +66,7 @@ class User extends Eloquent implements AuthenticatableContract, CanResetPassword
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
+    // colocar valor booleano al admin
     public function setAdminAttribute($value)
     {
         $this->attributes['admin'] = ($value==1);

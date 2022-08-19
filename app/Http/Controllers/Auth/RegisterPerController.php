@@ -9,9 +9,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-use Auth;
 
-class RegisterController extends Controller
+class RegisterPerController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -29,10 +28,9 @@ class RegisterController extends Controller
     /**
      * Where to redirect users after registration.
      *
-     * @var string
+     * 
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
-
+    
     /**
      * Create a new controller instance.
      *
@@ -40,7 +38,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
     }
 
     /**
@@ -49,16 +47,19 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+     //validador
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'matricula' => ['required', 'numeric', 'min:5'],
-            'name' => ['required', 'string', 'max:255'],
-            'apellido' => ['required', 'string', 'max:255'],
-            'carrera' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'admin' => ['required', 'boolean'],
+            'name' => ['required', 'string', 'max:60'],
+            'email' => ['required', 'string', 'email', 'max:60', 'unique:users'],
+            'tipo' => ['required', 'string'],
+            'numemp' => ['numeric'],
+            'areaper' => ['string'],
+//           'cargo' => ['string'],
+            'admin' => ['boolean'],
+            'password' => ['required', 'string', 'min:8', 'max:20', 'confirmed'],
         ]);
     }
 
@@ -68,23 +69,21 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
+
+    //crear usuario en la base de datos
     protected function create(array $data)
     {
         return User::create([
-            'matricula' => $data['matricula'],
             'name' => $data['name'],
-            'apellido' => $data['apellido'],
             'email' => $data['email'],
-            'carrera' => $data['carrera'],
-            'password' => Hash::make($data['password']),
+            'tipo' => $data['tipo'],
+            'numemp' => $data['numemp'],
+            'areaper' => $data['areaper'],
+//          'cargo' => $data['cargo'],
             'admin' => $data['admin'],
+            'password' => Hash::make($data['password']),
         ]);
-    }
-    
-    public function redirectPath(){
-        if(Auth::User()->admin){ 
-            return '/adminhp';
-        }
-        return '/home';
+
+        \Session::flash('message', 'store');
     }
 }

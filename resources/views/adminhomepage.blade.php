@@ -15,10 +15,20 @@
                     @endif
 
                     {{ __('You are logged in as admin!') }}
+                    @if(Session::has('message'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <p>{!! Session::get('message') !!}
+                                <a href="{{ url('/adminhomepage') }}">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </a>
+                            </p>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="pie" style="position : fixed; bottom : 0; height : 40px;  padding-top: 10px;"></div>
 @endsection
