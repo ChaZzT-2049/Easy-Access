@@ -59,7 +59,7 @@ class RegisterEstController extends Controller
             'carrera' => ['string'],
             'admin' => ['boolean'],
             'password' => ['required', 'string', 'min:8', 'max:20', 'confirmed'],
-            
+            'g-recaptcha-response' => ['required'],
         ]);
 
     }

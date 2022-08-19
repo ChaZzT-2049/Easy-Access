@@ -287,6 +287,18 @@
                         </div>
 
                         <div class="row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <div class="g-recaptcha" data-sitekey="6LdK9Y8hAAAAAIGQF9Moms4i-T3mD1oRk5s46GSd"></div>
+                                <br/>
+                                @if ($errors->has('g-recaptcha-response'))
+                                    <span class="feedbak-error">
+                                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="row mb-0">
                             {{-- subir formulario --}}
                             <div class="col-md-6 offset-md-4">
                                 <button type="button" id="send" class="btn btn-primary">
