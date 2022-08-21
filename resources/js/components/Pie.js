@@ -26,7 +26,7 @@ export default function Pie() {
                 Temperatura: ${data.main.temp}
             </li>
             <li class="text-white">
-                Temperatura: ${data.main.humidity}
+                Humedad: ${data.main.humidity}
             </li>
         `;
         document.getElementById('pie').innerHTML = datos;

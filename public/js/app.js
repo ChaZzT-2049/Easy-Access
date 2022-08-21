@@ -5448,7 +5448,7 @@ function Pie() {
   var showData = function showData(data) {
     console.log(data);
     var datos = "";
-    datos += "\n            <h1 class=\"text-white\">El clima en tu ciudad</h1>\n            <li class=\"text-white\">\n                Ciudad: ".concat(data.name, "\n            </li>\n            <li class=\"text-white\">\n                Pais: ").concat(data.sys.country, "\n            </li>\n            <li class=\"text-white\">\n                Descripcion: ").concat(data.weather[0].description, "\n            </li>\n            <li class=\"text-white\">\n                Temperatura: ").concat(data.main.temp, "\n            </li>\n            <li class=\"text-white\">\n                Temperatura: ").concat(data.main.humidity, "\n            </li>\n        ");
+    datos += "\n            <h1 class=\"text-white\">El clima en tu ciudad</h1>\n            <li class=\"text-white\">\n                Ciudad: ".concat(data.name, "\n            </li>\n            <li class=\"text-white\">\n                Pais: ").concat(data.sys.country, "\n            </li>\n            <li class=\"text-white\">\n                Descripcion: ").concat(data.weather[0].description, "\n            </li>\n            <li class=\"text-white\">\n                Temperatura: ").concat(data.main.temp, "\n            </li>\n            <li class=\"text-white\">\n                Humedad: ").concat(data.main.humidity, "\n            </li>\n        ");
     document.getElementById('pie').innerHTML = datos;
   };
 }
